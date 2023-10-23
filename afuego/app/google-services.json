@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "654695135045",
+    "project_id": "afuego-b114f",
+    "storage_bucket": "afuego-b114f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654695135045:android:1f4db77847560fe1c1702c",
+        "android_client_info": {
+          "package_name": "com.example.afuego"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZiGYtz82oaoOY20tOjM70Expl3F_7d8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

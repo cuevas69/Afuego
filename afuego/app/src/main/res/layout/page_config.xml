@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222127"
+    android:clickable="true"
+    tools:context=".PageConfig">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Contenido dentro del ScrollView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="vertical">
+
+            <!-- Tus vistas, botones, texto, imágenes, etc. van aquí -->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="223dp"
+                android:layout_marginBottom="568dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ajustes de la cuenta"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1500px" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Correo electrónico:         rafa@gmail.com >"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="50px"
+                android:translationY="-1480px" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Ajustes de Ubicación"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1400px" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Ubicación:                       Sevilla, Andalucía >"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="50px"
+                android:translationY="-1380px" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Distancia Máxima"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1300px" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:scaleY="1"
+                android:translationX="20px"
+                android:translationY="-1280px" />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="0 Km"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="620px"
+                android:translationY="-1350px" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="¿Que perfil deseas ver?"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1300px" />
+
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:translationX="50px"
+                android:translationY="-1280px">
+
+                <RadioButton
+                    android:id="@+id/femaleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Mujeres"
+                    android:textColor="#F4F4F4"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Hombres"
+                    android:textColor="#FAF6F6"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/bothRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Ambos"
+                    android:textColor="#FBF8F8"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Edad Máxima"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1200px" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:max="80"
+                android:scaleY="1"
+                android:translationX="20px"
+                android:translationY="-1180px" />
+
+            <TextView
+                android:id="@+id/km2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="18 años"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="620px"
+                android:translationY="-1250px" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Intereses"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1200px" />
+
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relación"
+                android:textColor="#FFFCFC"
+                android:textSize="16sp"
+                android:translationY="-1200px" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amigxs"
+                android:textColor="#FBF8F8"
+                android:textSize="16sp"
+                android:translationY="-1200px" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chateo"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationY="-1200px" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abiertx"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationY="-1200px" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rollo"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationX="500px"
+                android:translationY="-1700px" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No lo tengo claro"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationX="500px"
+                android:translationY="-1700px" />
+
+            <CheckBox
+                android:id="@+id/checkbox8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En persona"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationX="500px"
+                android:translationY="-1700px" />
+
+            <CheckBox
+                android:id="@+id/checkbox9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerradx"
+                android:textColor="#FBF9F9"
+                android:textSize="16sp"
+                android:translationX="500px"
+                android:translationY="-1700px" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Notificaciones"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="20px"
+                android:translationY="-1500px" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationX="-200px"
+                android:translationY="-1550px" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Cerrar Sesión"
+                android:textColor="#F4F3F3"
+                android:textSize="20sp"
+                android:translationX="350px"
+                android:translationY="-1300px" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="Eliminar Cuenta"
+                android:textColor="#F31C1C"
+                android:textSize="20sp"
+                android:translationX="350px"
+                android:translationY="-1100px" />
+
+            <ImageView
+                android:id="@+id/inicio"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:translationY="-900px"
+                app:srcCompat="@drawable/log2o" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
