@@ -1,44 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#222127"
     android:padding="16dp"
     tools:context=".PageLogin">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="282dp"
+        android:layout_height="254dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="461dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Correo Electrónico o Teléfono"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        android:translationY="550px" />
 
     <EditText
         android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo Electrónico"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:hint="Correo Electrónico o Teléfono"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="100dp"/>
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Contraseña"
+        android:textColor="#FDFCFC"
+        android:textSize="18sp"
+        android:translationY="900px" />
 
     <EditText
         android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="86dp"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        android:layout_below="@id/emailEditText"
-        android:layout_marginTop="16dp"/>
+        android:textColor="#FFF7F7" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="90dp"
+        android:text="Iniciar Sesión"
+        android:translationX="250px" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="¿No estás registrado aún? Regístrate aquí:"
+        android:textColor="#FDFCFC"
+        android:textSize="16sp"
+        android:translationY="1520px" />
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="match_parent"
+        android:layout_width="500px"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_marginTop="85dp"
-        android:text="Registrarse" />
+        android:layout_marginTop="202dp"
+        android:text="Registrarse"
+        android:translationX="250px" />
 
 </RelativeLayout>
