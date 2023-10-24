@@ -29,8 +29,6 @@
 
         <activity android:name="com.example.afuego.PageRegister" />
 
-        <activity android:name="com.example.afuego.PageEdit" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
