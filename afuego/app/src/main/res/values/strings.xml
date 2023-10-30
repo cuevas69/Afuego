@@ -1,4 +1,26 @@
 <resources>
     <string name="app_name">Afuego</string>
     <string name="Antonella">Antonella</string>
+    <string name="textView7">Renta min. 400 millones, Fuerte, Rubio, Pelo Largo</string>
+    <string name="textView6">Busco:</string>
+    <string name="textView4">Antonella, 35 años</string>
+    <string name="textView3">Ajustes de la cuenta</string>
+    <string name="textView27">Correo electrónico:         rafa@gmail.com ></string>
+    <string name="textView29">Ajustes de Ubicación</string>
+    <string name="textView30">Ubicación:                       Sevilla, Andalucía ></string>
+    <string name="textView5">Distancia Máxima</string>
+    <string name="km">0 Km</string>
+    <string name="textView8">¿Que perfil deseas ver?</string>
+    <string name="textView9">Edad Máxima</string>
+    <string name="km2">18 años</string>
+    <string name="textView2">Intereses</string>
+    <string name="textView10">Notificaciones</string>
+    <string name="textView11">Cerrar Sesión</string>
+    <string name="textView12">Eliminar Cuenta</string>
+    <string name="Editar_perfil">Editar perfil</string>
+    <string name="archivos">Archivos</string>
+    <string name="textView13">Correo Electrónico o Teléfono</string>
+    <string name="textView14">Contraseña</string>
+    <string name="textView15">¿No estás registrado aún? Regístrate aquí:</string>
+    <string name="textView">RAFAEL, 20 años</string>
 </resources>
