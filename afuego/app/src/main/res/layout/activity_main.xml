@@ -110,7 +110,7 @@
         android:layout_width="380dp"
         android:layout_height="60dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="Busco: "
+        android:text="@string/textView6"
         android:textColor="#F4EFEF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView5"

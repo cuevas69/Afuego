@@ -16,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class PageRegister extends AppCompatActivity {
 
+    //Declaramos el campo del email, contraseña y la Autenticación de Firebase
     private EditText emailEditText, passwordEditText;
     private Button registerButton;
     private FirebaseAuth auth;
@@ -25,6 +26,7 @@ public class PageRegister extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.page_register);
 
+        //Declaramos los botones y textos que serán usados para dar función
         emailEditText = findViewById(R.id.emailEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         registerButton = findViewById(R.id.registerButton);
@@ -37,6 +39,7 @@ public class PageRegister extends AppCompatActivity {
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
+                //Si el email y/o contraseña están vacios, saltará un aviso para que complete los campos
                 if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(PageRegister.this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
