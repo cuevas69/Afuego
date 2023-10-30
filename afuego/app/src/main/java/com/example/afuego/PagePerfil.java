@@ -35,14 +35,5 @@ public class PagePerfil extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
-
-        ImageView imagenedit = findViewById(R.id.imagenedit);
-        imagenedit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(v.getContext(),PageEdit.class);
-                startActivityForResult(intent, 0);
-            }
-        });
     }
 }
