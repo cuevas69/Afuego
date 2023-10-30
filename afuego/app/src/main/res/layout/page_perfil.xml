@@ -12,10 +12,10 @@
         android:id="@+id/imageView"
         android:layout_width="243dp"
         android:layout_height="223dp"
-        android:layout_marginBottom="568dp"
+        android:layout_marginBottom="508dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo" />
 
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="RAFAEL, 20 años"
+        android:text="@string/textView"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,10 +62,10 @@
         android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053"
+        app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/settings_16_64" />
 
     <ImageView
@@ -129,7 +129,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView23"
+        android:id="@+id/imagenedit"
         android:layout_width="40dp"
         android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
