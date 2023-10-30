@@ -23,8 +23,9 @@ public class PageConfig extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.page_config);
+        setContentView(R.layout.page_config); //Llamamos a la vista ".xml" correspondiente
 
+        //Primero creamos una función "OnClick" para cuando al clickear en la imagen con id = "inicio" nos mande a la página "MainActivity"
         ImageView inicio = findViewById(R.id.inicio);
         inicio.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -34,7 +35,7 @@ public class PageConfig extends AppCompatActivity {
             }
         });
 
-
+        //Esta función realizará el arrastre de la barra de KM, actualizando el TextView de los KM.
         SeekBar seekBar = findViewById(R.id.seekBar);
         TextView km = findViewById(R.id.km);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -55,6 +56,7 @@ public class PageConfig extends AppCompatActivity {
             }
         });
 
+        //Aquí añadimos función al grupo de RadioButton que selecciona entre mujer, hombre o ambos
         RadioGroup genderRadioGroup = findViewById(R.id.genderRadioGroup);
         RadioButton femaleRadioButton = findViewById(R.id.femaleRadioButton);
         RadioButton maleRadioButton = findViewById(R.id.maleRadioButton);
@@ -63,9 +65,11 @@ public class PageConfig extends AppCompatActivity {
         genderRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
+                //Función para guardar en la caché los cambios
                 SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
 
+                //Función para que marque el RadioButton con su id correspondiente
                 if (checkedId == R.id.femaleRadioButton) {
                     editor.putString("selectedGender", "Mujeres");
                 } else if (checkedId == R.id.maleRadioButton) {
@@ -75,6 +79,7 @@ public class PageConfig extends AppCompatActivity {
                 }
                 editor.apply();
 
+                //Función para que marque el RadioButton con su id correspondiente
                 String selectedGender = sharedPreferences.getString("selectedGender", "");
 
                 if (selectedGender.equals("Mujeres")) {
@@ -87,6 +92,7 @@ public class PageConfig extends AppCompatActivity {
             }
         });
 
+        //Esta función realizará el arrastre de la barra de Edad, actualizando el TextView de la Edad.
         SeekBar seekBar2 = findViewById(R.id.seekBar2);
         TextView km2 = findViewById(R.id.km2);
         seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

@@ -1,7 +1,6 @@
 package com.example.afuego;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +18,6 @@ public class PageEdit extends AppCompatActivity {
     private ImageView imagen2;
     private ImageView imagen3;
     private ImageView imagen4;
-    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,28 +29,6 @@ public class PageEdit extends AppCompatActivity {
         imagen2 = findViewById(R.id.imagen2);
         imagen3 = findViewById(R.id.imagen3);
         imagen4 = findViewById(R.id.imagen4);
-
-        // Inicializa SharedPreferences
-        sharedPreferences = getSharedPreferences("ImagePreferences", MODE_PRIVATE);
-
-        // Carga las imágenes guardadas, si las hay
-        String imageUri1 = sharedPreferences.getString("imageUri1", null);
-        String imageUri2 = sharedPreferences.getString("imageUri2", null);
-        String imageUri3 = sharedPreferences.getString("imageUri3", null);
-        String imageUri4 = sharedPreferences.getString("imageUri4", null);
-
-        if (imageUri1 != null) {
-            imagen1.setImageURI(Uri.parse(imageUri1));
-        }
-        if (imageUri2 != null) {
-            imagen2.setImageURI(Uri.parse(imageUri2));
-        }
-        if (imageUri3 != null) {
-            imagen3.setImageURI(Uri.parse(imageUri3));
-        }
-        if (imageUri4 != null) {
-            imagen4.setImageURI(Uri.parse(imageUri4));
-        }
 
         flechaedit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +54,7 @@ public class PageEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abre el explorador de archivos para seleccionar una imagen.
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                Intent intent = new  Intent(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
                 startActivityForResult(intent, REQUEST_IMAGE_PICK2);
             }
@@ -116,41 +92,21 @@ public class PageEdit extends AppCompatActivity {
 
             // Establece la imagen seleccionada en "imagen1".
             imagen1.setImageURI(selectedImageUri);
-
-            // Guarda la URI en SharedPreferences
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("imageUri1", selectedImageUri.toString());
-            editor.apply();
         } else if (requestCode == REQUEST_IMAGE_PICK2 && resultCode == RESULT_OK && data != null) {
             Uri selectedImageUri = data.getData();
 
             // Establece la imagen seleccionada en "imagen2".
             imagen2.setImageURI(selectedImageUri);
-
-            // Guarda la URI en SharedPreferences
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("imageUri2", selectedImageUri.toString());
-            editor.apply();
         } else if (requestCode == REQUEST_IMAGE_PICK3 && resultCode == RESULT_OK && data != null) {
             Uri selectedImageUri = data.getData();
 
             // Establece la imagen seleccionada en "imagen3".
             imagen3.setImageURI(selectedImageUri);
-
-            // Guarda la URI en SharedPreferences
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("imageUri3", selectedImageUri.toString());
-            editor.apply();
         } else if (requestCode == REQUEST_IMAGE_PICK4 && resultCode == RESULT_OK && data != null) {
             Uri selectedImageUri = data.getData();
 
             // Establece la imagen seleccionada en "imagen4".
             imagen4.setImageURI(selectedImageUri);
-
-            // Guarda la URI en SharedPreferences
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("imageUri4", selectedImageUri.toString());
-            editor.apply();
         }
     }
 }

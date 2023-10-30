@@ -33,13 +33,15 @@ public class PageLogin extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Declaramos los String email y contraseña
                 String email = emailEditText.getText().toString();
                 String password = passwordEditText.getText().toString();
 
+                // Esta función hará que si dejamos vacío el email, nos saltará un aviso en el que pida que rellene los campos.
                 if (email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(PageLogin.this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
-                    // Iniciar sesión con Firebase
+                    // Si rellenamos el campo, iniciará sesión con Firebase
                     auth.signInWithEmailAndPassword(email, password)
                             .addOnCompleteListener(PageLogin.this, new OnCompleteListener<AuthResult>() {
                                 @Override
