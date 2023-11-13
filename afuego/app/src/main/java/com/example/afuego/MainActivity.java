@@ -34,5 +34,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+
+        ImageView chat = findViewById(R.id.imageView20);
+        chat.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(v.getContext(),PageChats.class);
+                startActivityForResult(intent, 0);
+            }
+        });
     }
 }

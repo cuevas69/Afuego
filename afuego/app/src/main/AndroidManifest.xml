@@ -31,6 +31,10 @@
 
         <activity android:name="com.example.afuego.PageEdit" />
 
+        <activity android:name="com.example.afuego.PageChats" />
+
+        <activity android:name="com.example.afuego.PageChat" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

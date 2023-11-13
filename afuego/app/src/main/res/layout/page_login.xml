@@ -76,11 +76,13 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="159dp"
         android:fontFamily="sans-serif-light"
         android:text="@string/textView15"
         android:textColor="#FDFCFC"
-        android:textSize="16sp"
-        android:translationY="1520px" />
+        android:textSize="16sp" />
 
     <Button
         android:id="@+id/registerButton"

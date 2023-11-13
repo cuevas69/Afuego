@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222127"
+    android:clickable="true"
+    tools:context=".PageChat">
+
+    <!-- RecyclerView para mostrar los mensajes -->
+
+    <ImageView
+        android:id="@+id/chats"
+        android:layout_width="53dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/recyclerViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:rotation="180"
+        android:tint="#E5A3F1"
+        android:translationX="50px"
+        android:translationY="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/_85e469fcb11b227491c3374" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/recyclerViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/circular_background"
+        android:clipToOutline="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/chat1" />
+
+    <View
+        android:id="@+id/lineBelowImage"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="5dp"
+        android:background="#808080" />
+
+    <ImageView
+        android:id="@+id/ajustes2"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/recyclerViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/settings_16_64" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recyclerViewChat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Sandra"
+        android:textColor="#FBFBFB"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewChat"
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:layout_above="@+id/inputLayout"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <!-- Diseño de entrada de texto -->
+    <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- Cuadro de texto para escribir mensajes -->
+
+        <!-- Botón para enviar mensajes -->
+
+        <Button
+            android:id="@+id/buttonSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:backgroundTint="#EF8686"
+            android:text="Enviar" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="71dp"
+            android:layout_toStartOf="@+id/buttonSendMessage"
+            android:backgroundTint="#F6F0F0"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:gravity="start|top"
+            android:hint="Escribe un mensaje"
+            android:inputType="textMultiLine"
+            android:textColor="#FBFBFB"
+            android:textColorHint="#CAA6A6" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
