@@ -1,0 +1,72 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$/..\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision a41bddd867ba1e0590aaf35f2ff22300b1820674)
++++ b/.idea/vcs.xml	(date 1698654959387)
+@@ -2,5 +2,6 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: afuego/app/src/main/java/com/example/afuego/PagePerfil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.afuego;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.ImageButton;\r\nimport android.widget.ImageView;\r\n\r\npublic class PagePerfil extends AppCompatActivity {\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.page_perfil);\r\n\r\n        //Boton que navegará a la página MainActivity\r\n        ImageView inicio = findViewById(R.id.inicio);\r\n        inicio.setOnClickListener(new View.OnClickListener(){\r\n            @Override\r\n            public void onClick(View v){\r\n                Intent intent = new Intent(v.getContext(),MainActivity.class);\r\n                startActivityForResult(intent, 0);\r\n            }\r\n        });\r\n\r\n        //Boton que navegará a la página PageConfig\r\n        ImageView ajustes = findViewById(R.id.ajustes);\r\n        ajustes.setOnClickListener(new View.OnClickListener(){\r\n            @Override\r\n            public void onClick(View v){\r\n                Intent intent = new Intent(v.getContext(),PageConfig.class);\r\n                startActivityForResult(intent, 0);\r\n            }\r\n        });\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/afuego/app/src/main/java/com/example/afuego/PagePerfil.java b/afuego/app/src/main/java/com/example/afuego/PagePerfil.java
+--- a/afuego/app/src/main/java/com/example/afuego/PagePerfil.java	(revision a41bddd867ba1e0590aaf35f2ff22300b1820674)
++++ b/afuego/app/src/main/java/com/example/afuego/PagePerfil.java	(date 1698743410337)
+@@ -35,5 +35,15 @@
+                 startActivityForResult(intent, 0);
+             }
+         });
++
++        //Boton que navegará a la página PageEdit
++        ImageView imagendit = findViewById(R.id.imagenedit);
++        imagendit.setOnClickListener(new View.OnClickListener(){
++            @Override
++            public void onClick(View v){
++                Intent intent = new Intent(v.getContext(),PageEdit.class);
++                startActivityForResult(intent, 0);
++            }
++        });
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"NONE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"67133a9d-ae63-4d2c-9704-3a3e9388e5f8\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2WZ2ksasOJcYGuRkk6oHqQDY20W\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.cidr.known.project.marker\": \"true\",\r\n    \"cidr.known.project.marker\": \"true\",\r\n    \"last_opened_file_path\": \"C:/Users/Alumno1/Documents/Cuevas/2ndo-DAM/Proyecto/afuego\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"67133a9d-ae63-4d2c-9704-3a3e9388e5f8\" name=\"Changes\" comment=\"\" />\r\n      <created>1696925928643</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1696925928643</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a41bddd867ba1e0590aaf35f2ff22300b1820674)
++++ b/.idea/workspace.xml	(date 1698654959381)
+@@ -11,7 +11,7 @@
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectId" id="2WZ2ksasOJcYGuRkk6oHqQDY20W" />
+   <component name="ProjectViewState">
+@@ -24,7 +24,7 @@
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.cidr.known.project.marker": "true",
+     "cidr.known.project.marker": "true",
+-    "last_opened_file_path": "C:/Users/Alumno1/Documents/Cuevas/2ndo-DAM/Proyecto/afuego"
++    "last_opened_file_path": "C:/Users/lahur/Desktop/DAM/proyectoambos/Afuego/afuego"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
