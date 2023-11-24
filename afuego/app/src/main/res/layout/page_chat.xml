@@ -32,13 +32,13 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="79dp"
-        android:layout_height="91dp"
+        android:layout_width="95dp"
+        android:layout_height="102dp"
         android:layout_above="@+id/recyclerViewChat"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="230dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="215dp"
         android:layout_marginBottom="37dp"
         android:background="@drawable/circular_background"
         android:clipToOutline="true"

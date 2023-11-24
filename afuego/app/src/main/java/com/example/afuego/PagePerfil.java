@@ -45,5 +45,15 @@ public class PagePerfil extends AppCompatActivity {
                 startActivityForResult(intent, 0);
             }
         });
+
+        //Boton que navegará a la página PageEdit
+        ImageView imagendit = findViewById(R.id.imagenedit);
+        imagendit.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(v.getContext(),PageEdit.class);
+                startActivityForResult(intent, 0);
+            }
+        });
     }
 }
