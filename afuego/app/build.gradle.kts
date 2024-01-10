@@ -43,5 +43,8 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    implementation ("com.google.android.gms:play-services-location:18.0.0")
+    implementation ("com.google.android.libraries.places:places:2.7.0")
+
 
 }
